@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <ProductosComponent />
+    <router-view />
   </div>
 </template>
 
 <script setup>
-import ProductosComponent from './components/ProductosComponent.vue'
+// Estructura limpia orientada a rutas
 </script>
 
 <style>
@@ -19,5 +19,11 @@ body {
 #app {
   max-width: 1000px;
   margin: 0 auto;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 </style>
